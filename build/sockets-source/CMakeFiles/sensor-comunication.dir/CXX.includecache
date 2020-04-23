@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../sockets-source/src/comunication.hpp
+iostream
+-
+assert.h
+-
+unistd.h
+-
+string.h
+-
+pthread.h
+-
+stdio.h
+-
+nanomsg/nn.h
+-
+nanomsg/reqrep.h
+-
+
+/home/tonix/projects/helloworld/SensorProyect/SensorProyect/sockets-source/src/comunication.cpp
+comunication.hpp
+-
+
+/usr/local/include/nanomsg/nn.h
+errno.h
+-
+stddef.h
+-
+stdint.h
+-
+
+/usr/local/include/nanomsg/reqrep.h
+nn.h
+/usr/local/include/nanomsg/nn.h
+

@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/sensor.dir/main.cpp.o  -o sensor -Wl,-rpath,/usr/local/lib ../sockets-source/libsensor-comunication.a /usr/local/lib/libnanomsg.so.5.1.0 -lanl -lrt -lpthread -lnsl -lpthread 
