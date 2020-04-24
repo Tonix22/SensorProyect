@@ -24,8 +24,30 @@ nanomsg/nn.h
 nanomsg/reqrep.h
 -
 
+../sockets-source/src/message_wrap.hpp
+
 /home/tonix/projects/helloworld/SensorProyect/SensorProyect/sockets-source/src/comunication.cpp
 comunication.hpp
+-
+message_wrap.hpp
+-
+string
+-
+
+/home/tonix/projects/helloworld/SensorProyect/SensorProyect/sockets-source/src/message_wrap.cpp
+message_wrap.hpp
+-
+iostream
+-
+unordered_set
+-
+stdio.h
+-
+string
+-
+stdio.h
+-
+string.h
 -
 
 /usr/local/include/nanomsg/nn.h

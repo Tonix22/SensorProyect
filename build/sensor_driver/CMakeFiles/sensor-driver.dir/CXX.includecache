@@ -6,3 +6,13 @@
 
 #IncludeRegexTransform: 
 
+/home/tonix/projects/helloworld/SensorProyect/SensorProyect/sensor_driver/src/sensors.cpp
+iostream
+-
+cstdlib
+-
+ctime
+-
+random
+-
+

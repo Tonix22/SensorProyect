@@ -65,6 +65,116 @@ CMAKE_SOURCE_DIR = /home/tonix/projects/helloworld/SensorProyect/SensorProyect
 CMAKE_BINARY_DIR = /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build
 
 #=============================================================================
+# Directory level rules for directory DataBase
+
+# Convenience name for "all" pass in the directory.
+DataBase/all: DataBase/CMakeFiles/databaseSensorData.dir/all
+
+.PHONY : DataBase/all
+
+# Convenience name for "clean" pass in the directory.
+DataBase/clean: DataBase/CMakeFiles/databaseSensorData.dir/clean
+
+.PHONY : DataBase/clean
+
+# Convenience name for "preinstall" pass in the directory.
+DataBase/preinstall:
+
+.PHONY : DataBase/preinstall
+
+#=============================================================================
+# Target rules for target DataBase/CMakeFiles/databaseSensorData.dir
+
+# All Build rule for target.
+DataBase/CMakeFiles/databaseSensorData.dir/all:
+	$(MAKE) -f DataBase/CMakeFiles/databaseSensorData.dir/build.make DataBase/CMakeFiles/databaseSensorData.dir/depend
+	$(MAKE) -f DataBase/CMakeFiles/databaseSensorData.dir/build.make DataBase/CMakeFiles/databaseSensorData.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles --progress-num=1,2 "Built target databaseSensorData"
+.PHONY : DataBase/CMakeFiles/databaseSensorData.dir/all
+
+# Include target in all.
+all: DataBase/CMakeFiles/databaseSensorData.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+DataBase/CMakeFiles/databaseSensorData.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 DataBase/CMakeFiles/databaseSensorData.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles 0
+.PHONY : DataBase/CMakeFiles/databaseSensorData.dir/rule
+
+# Convenience name for target.
+databaseSensorData: DataBase/CMakeFiles/databaseSensorData.dir/rule
+
+.PHONY : databaseSensorData
+
+# clean rule for target.
+DataBase/CMakeFiles/databaseSensorData.dir/clean:
+	$(MAKE) -f DataBase/CMakeFiles/databaseSensorData.dir/build.make DataBase/CMakeFiles/databaseSensorData.dir/clean
+.PHONY : DataBase/CMakeFiles/databaseSensorData.dir/clean
+
+# clean rule for target.
+clean: DataBase/CMakeFiles/databaseSensorData.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory sensor_driver
+
+# Convenience name for "all" pass in the directory.
+sensor_driver/all: sensor_driver/CMakeFiles/sensor-driver.dir/all
+
+.PHONY : sensor_driver/all
+
+# Convenience name for "clean" pass in the directory.
+sensor_driver/clean: sensor_driver/CMakeFiles/sensor-driver.dir/clean
+
+.PHONY : sensor_driver/clean
+
+# Convenience name for "preinstall" pass in the directory.
+sensor_driver/preinstall:
+
+.PHONY : sensor_driver/preinstall
+
+#=============================================================================
+# Target rules for target sensor_driver/CMakeFiles/sensor-driver.dir
+
+# All Build rule for target.
+sensor_driver/CMakeFiles/sensor-driver.dir/all:
+	$(MAKE) -f sensor_driver/CMakeFiles/sensor-driver.dir/build.make sensor_driver/CMakeFiles/sensor-driver.dir/depend
+	$(MAKE) -f sensor_driver/CMakeFiles/sensor-driver.dir/build.make sensor_driver/CMakeFiles/sensor-driver.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles --progress-num=8,9 "Built target sensor-driver"
+.PHONY : sensor_driver/CMakeFiles/sensor-driver.dir/all
+
+# Include target in all.
+all: sensor_driver/CMakeFiles/sensor-driver.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+sensor_driver/CMakeFiles/sensor-driver.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_driver/CMakeFiles/sensor-driver.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles 0
+.PHONY : sensor_driver/CMakeFiles/sensor-driver.dir/rule
+
+# Convenience name for target.
+sensor-driver: sensor_driver/CMakeFiles/sensor-driver.dir/rule
+
+.PHONY : sensor-driver
+
+# clean rule for target.
+sensor_driver/CMakeFiles/sensor-driver.dir/clean:
+	$(MAKE) -f sensor_driver/CMakeFiles/sensor-driver.dir/build.make sensor_driver/CMakeFiles/sensor-driver.dir/clean
+.PHONY : sensor_driver/CMakeFiles/sensor-driver.dir/clean
+
+# clean rule for target.
+clean: sensor_driver/CMakeFiles/sensor-driver.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory sockets-source
 
 # Convenience name for "all" pass in the directory.
@@ -89,7 +199,7 @@ sockets-source/preinstall:
 sockets-source/CMakeFiles/sensor-comunication.dir/all:
 	$(MAKE) -f sockets-source/CMakeFiles/sensor-comunication.dir/build.make sockets-source/CMakeFiles/sensor-comunication.dir/depend
 	$(MAKE) -f sockets-source/CMakeFiles/sensor-comunication.dir/build.make sockets-source/CMakeFiles/sensor-comunication.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles --progress-num=3,4 "Built target sensor-comunication"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles --progress-num=5,6,7 "Built target sensor-comunication"
 .PHONY : sockets-source/CMakeFiles/sensor-comunication.dir/all
 
 # Include target in all.
@@ -99,7 +209,7 @@ all: sockets-source/CMakeFiles/sensor-comunication.dir/all
 
 # Build rule for subdir invocation for target.
 sockets-source/CMakeFiles/sensor-comunication.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 sockets-source/CMakeFiles/sensor-comunication.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles 0
 .PHONY : sockets-source/CMakeFiles/sensor-comunication.dir/rule
@@ -141,10 +251,12 @@ main-exec/preinstall:
 # Target rules for target main-exec/CMakeFiles/sensor.dir
 
 # All Build rule for target.
+main-exec/CMakeFiles/sensor.dir/all: DataBase/CMakeFiles/databaseSensorData.dir/all
+main-exec/CMakeFiles/sensor.dir/all: sensor_driver/CMakeFiles/sensor-driver.dir/all
 main-exec/CMakeFiles/sensor.dir/all: sockets-source/CMakeFiles/sensor-comunication.dir/all
 	$(MAKE) -f main-exec/CMakeFiles/sensor.dir/build.make main-exec/CMakeFiles/sensor.dir/depend
 	$(MAKE) -f main-exec/CMakeFiles/sensor.dir/build.make main-exec/CMakeFiles/sensor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles --progress-num=1,2 "Built target sensor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles --progress-num=3,4 "Built target sensor"
 .PHONY : main-exec/CMakeFiles/sensor.dir/all
 
 # Include target in all.
@@ -154,7 +266,7 @@ all: main-exec/CMakeFiles/sensor.dir/all
 
 # Build rule for subdir invocation for target.
 main-exec/CMakeFiles/sensor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 main-exec/CMakeFiles/sensor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles 0
 .PHONY : main-exec/CMakeFiles/sensor.dir/rule

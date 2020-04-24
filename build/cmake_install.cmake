@@ -39,6 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+  include("/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/DataBase/cmake_install.cmake")
+  include("/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/sensor_driver/cmake_install.cmake")
   include("/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/sockets-source/cmake_install.cmake")
   include("/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/main-exec/cmake_install.cmake")
 

@@ -1,5 +1,11 @@
 /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles/rebuild_cache.dir
 /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles/edit_cache.dir
+/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/DataBase/CMakeFiles/rebuild_cache.dir
+/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/DataBase/CMakeFiles/edit_cache.dir
+/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/DataBase/CMakeFiles/databaseSensorData.dir
+/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/sensor_driver/CMakeFiles/rebuild_cache.dir
+/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/sensor_driver/CMakeFiles/edit_cache.dir
+/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/sensor_driver/CMakeFiles/sensor-driver.dir
 /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/sockets-source/CMakeFiles/rebuild_cache.dir
 /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/sockets-source/CMakeFiles/edit_cache.dir
 /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/sockets-source/CMakeFiles/sensor-comunication.dir

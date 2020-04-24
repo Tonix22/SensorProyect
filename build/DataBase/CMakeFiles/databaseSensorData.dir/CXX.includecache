@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tonix/projects/helloworld/SensorProyect/SensorProyect/DataBase/src/Database.cpp
+stdio.h
+-
+sqlite3.h
+-
+

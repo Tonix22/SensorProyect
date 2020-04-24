@@ -70,17 +70,32 @@ sockets-source/CMakeFiles/sensor-comunication.dir/src/comunication.cpp.s: cmake_
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sensor-comunication.dir/src/comunication.cpp.s"
 	cd /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/sockets-source && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tonix/projects/helloworld/SensorProyect/SensorProyect/sockets-source/src/comunication.cpp -o CMakeFiles/sensor-comunication.dir/src/comunication.cpp.s
 
+sockets-source/CMakeFiles/sensor-comunication.dir/src/message_wrap.cpp.o: sockets-source/CMakeFiles/sensor-comunication.dir/flags.make
+sockets-source/CMakeFiles/sensor-comunication.dir/src/message_wrap.cpp.o: ../sockets-source/src/message_wrap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object sockets-source/CMakeFiles/sensor-comunication.dir/src/message_wrap.cpp.o"
+	cd /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/sockets-source && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sensor-comunication.dir/src/message_wrap.cpp.o -c /home/tonix/projects/helloworld/SensorProyect/SensorProyect/sockets-source/src/message_wrap.cpp
+
+sockets-source/CMakeFiles/sensor-comunication.dir/src/message_wrap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sensor-comunication.dir/src/message_wrap.cpp.i"
+	cd /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/sockets-source && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tonix/projects/helloworld/SensorProyect/SensorProyect/sockets-source/src/message_wrap.cpp > CMakeFiles/sensor-comunication.dir/src/message_wrap.cpp.i
+
+sockets-source/CMakeFiles/sensor-comunication.dir/src/message_wrap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sensor-comunication.dir/src/message_wrap.cpp.s"
+	cd /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/sockets-source && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tonix/projects/helloworld/SensorProyect/SensorProyect/sockets-source/src/message_wrap.cpp -o CMakeFiles/sensor-comunication.dir/src/message_wrap.cpp.s
+
 # Object files for target sensor-comunication
 sensor__comunication_OBJECTS = \
-"CMakeFiles/sensor-comunication.dir/src/comunication.cpp.o"
+"CMakeFiles/sensor-comunication.dir/src/comunication.cpp.o" \
+"CMakeFiles/sensor-comunication.dir/src/message_wrap.cpp.o"
 
 # External object files for target sensor-comunication
 sensor__comunication_EXTERNAL_OBJECTS =
 
 sockets-source/libsensor-comunication.a: sockets-source/CMakeFiles/sensor-comunication.dir/src/comunication.cpp.o
+sockets-source/libsensor-comunication.a: sockets-source/CMakeFiles/sensor-comunication.dir/src/message_wrap.cpp.o
 sockets-source/libsensor-comunication.a: sockets-source/CMakeFiles/sensor-comunication.dir/build.make
 sockets-source/libsensor-comunication.a: sockets-source/CMakeFiles/sensor-comunication.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libsensor-comunication.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libsensor-comunication.a"
 	cd /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/sockets-source && $(CMAKE_COMMAND) -P CMakeFiles/sensor-comunication.dir/cmake_clean_target.cmake
 	cd /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/sockets-source && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sensor-comunication.dir/link.txt --verbose=$(VERBOSE)
 

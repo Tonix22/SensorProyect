@@ -8,10 +8,12 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
+  "../DataBase/CMakeLists.txt"
   "CMakeFiles/3.12.0/CMakeCCompiler.cmake"
   "CMakeFiles/3.12.0/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.12.0/CMakeSystem.cmake"
   "../main-exec/CMakeLists.txt"
+  "../sensor_driver/CMakeLists.txt"
   "../sockets-source/CMakeLists.txt"
   "/usr/local/lib/cmake/nanomsg-1.1.5-4-g2f4d57f0/nanomsg-config-version.cmake"
   "/usr/local/lib/cmake/nanomsg-1.1.5-4-g2f4d57f0/nanomsg-config.cmake"
@@ -45,12 +47,16 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "DataBase/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "sensor_driver/CMakeFiles/CMakeDirectoryInformation.cmake"
   "sockets-source/CMakeFiles/CMakeDirectoryInformation.cmake"
   "main-exec/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "DataBase/CMakeFiles/databaseSensorData.dir/DependInfo.cmake"
+  "sensor_driver/CMakeFiles/sensor-driver.dir/DependInfo.cmake"
   "sockets-source/CMakeFiles/sensor-comunication.dir/DependInfo.cmake"
   "main-exec/CMakeFiles/sensor.dir/DependInfo.cmake"
   )

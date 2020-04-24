@@ -79,7 +79,10 @@ sensor_EXTERNAL_OBJECTS =
 
 main-exec/sensor: main-exec/CMakeFiles/sensor.dir/main.cpp.o
 main-exec/sensor: main-exec/CMakeFiles/sensor.dir/build.make
+main-exec/sensor: DataBase/libdatabaseSensorData.a
+main-exec/sensor: sensor_driver/libsensor-driver.a
 main-exec/sensor: sockets-source/libsensor-comunication.a
+main-exec/sensor: /home/student/libs/lib/libsqlite3.a
 main-exec/sensor: /usr/local/lib/libnanomsg.so.5.1.0
 main-exec/sensor: main-exec/CMakeFiles/sensor.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable sensor"

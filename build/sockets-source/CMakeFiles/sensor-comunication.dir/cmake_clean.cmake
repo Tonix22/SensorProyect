@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sensor-comunication.dir/src/comunication.cpp.o"
+  "CMakeFiles/sensor-comunication.dir/src/message_wrap.cpp.o"
   "libsensor-comunication.pdb"
   "libsensor-comunication.a"
 )

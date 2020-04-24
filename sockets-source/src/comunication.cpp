@@ -1,55 +1,17 @@
 #include <comunication.hpp>
+#include <message_wrap.hpp>
 #include <string>
-#include <unordered_set>
 using namespace std;
 
 /*  The server runs forever. */
-unordered_set<string> cmd;
 
-char *get_time_stap ()
-{
-  time_t raw = time (&raw);
-  struct tm *info = localtime (&raw);
-  char *text = asctime (info);
-  text[strlen(text)-1] = '\0'; // remove '\n'
-  return text;
-}
-
-void init_commands()
-{
-    cmd.insert(DATE);
-    cmd.insert(QUERY);
-    cmd.insert(TEMP);
-    cmd.insert(HUMIDTY);
-    cmd.insert(BOTH);
-    cmd.insert(TIMEQUERY); // GO TO SEARCH TO SQL DATABASE
-}
-
-bool message_process(char* msg)
-{
-    char *token = strtok(msg, " ");
-    bool valid_param = false;
-    if(cmd.find(token) != cmd.end())
-    {
-        cout << "SERVER: RECEIVED DATE REQUEST" << std::endl;
-        valid_param =true;
-        while (token != NULL) 
-        { 
-            printf("parameters: %s\n", token); 
-            token = strtok(NULL, " "); 
-        }  
-    }
-
-    return valid_param;
-}
-
+extern string send_command;
 
 int server (const char *url)
 {
     int sock = nn_socket (AF_SP, NN_REP);
     assert (sock >= 0);
 
-    //binding
     if (nn_bind (sock, url) < 0) 
     {
         fprintf (stderr, "nn_bind: %s\n", nn_strerror (nn_errno ()));
@@ -78,29 +40,10 @@ int server (const char *url)
   
 }
 
-int client (const char *url, int argc, char const *argv[])
+int client (const char *url)
 {
     char *buf = NULL;
     int bytes = -1;
-    string send_command;
-    if(argc == 4 )
-    {
-        send_command= argv[2];
-        send_command+= " ";
-        send_command+=argv[3];
-    }
-    else if (argc == 5)
-    {
-        send_command=  argv[2];
-        send_command+=  " ";
-        send_command+= argv[3];
-        send_command+=  " ";
-        send_command+= argv[4];
-    }
-    else 
-    {
-      std::cout << argc << std::endl;
-    }
     
     int sock = nn_socket (AF_SP, NN_REQ);
     assert (sock >= 0);
@@ -113,5 +56,4 @@ int client (const char *url, int argc, char const *argv[])
     printf ("CLIENT: RECEIVED DATE %s\n", buf);
     nn_freemsg (buf);
     return nn_shutdown (sock, 0);
-   
 }

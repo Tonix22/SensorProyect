@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/tonix/projects/helloworld/SensorProyect/SensorProyect/sockets-source/src -isystem /usr/local/include 
+CXX_INCLUDES = -I/home/tonix/projects/helloworld/SensorProyect/SensorProyect/DataBase/src -I/home/tonix/projects/helloworld/SensorProyect/SensorProyect/sensor_driver/src -I/home/tonix/projects/helloworld/SensorProyect/SensorProyect/sockets-source/src -isystem /usr/local/include 
 

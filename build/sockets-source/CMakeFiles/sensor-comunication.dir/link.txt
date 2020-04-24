@@ -1,2 +1,2 @@
-/usr/bin/ar qc libsensor-comunication.a  CMakeFiles/sensor-comunication.dir/src/comunication.cpp.o
+/usr/bin/ar qc libsensor-comunication.a  CMakeFiles/sensor-comunication.dir/src/comunication.cpp.o CMakeFiles/sensor-comunication.dir/src/message_wrap.cpp.o
 /usr/bin/ranlib libsensor-comunication.a

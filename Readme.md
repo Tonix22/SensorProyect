@@ -8,15 +8,23 @@ execpath = SensorProyect/build/main-exec
 #### 2. Exec 
 #### Server 
 ```console
-tonix@desk:~$<execpath> ./sensor server ipc:///tmp/reqrep.ipc
+tonix@desk:~$<execpath> ./sensor server
 
 ```
 #### Client
 
 ```console
-tonix@desk:~$<execpath> ./sensor client ipc:///tmp/reqrep.ipc
-
+tonix@desk:~$<execpath> ./sensor client Sensor Temp
+tonix@desk:~$<execpath> ./sensor client Sensor Hum
+tonix@desk:~$<execpath> ./sensor client Time <timestamp> <Temp/Hum>
 ```
+posible commands
+        //COMANDS FROM CLIENT TO SERVER
+
+        //"Sensor Temp" --> returns last taken temperature
+        //"Sensor Hum" --> returns last taken humidty
+        //"Sensor Both"--> returns last boths
+        //"Time <timestamp> <sensor type>" --> return sensor output in that time
 #### 3. Expected output
 SERVER: RECEIVED DATE REQUEST
 

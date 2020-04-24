@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsensor-driver.a  CMakeFiles/sensor-driver.dir/src/sensors.cpp.o
+/usr/bin/ranlib libsensor-driver.a

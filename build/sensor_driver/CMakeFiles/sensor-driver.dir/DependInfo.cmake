@@ -4,14 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/tonix/projects/helloworld/SensorProyect/SensorProyect/sockets-source/src/comunication.cpp" "/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/sockets-source/CMakeFiles/say-hello.dir/src/comunication.cpp.o"
+  "/home/tonix/projects/helloworld/SensorProyect/SensorProyect/sensor_driver/src/sensors.cpp" "/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/sensor_driver/CMakeFiles/sensor-driver.dir/src/sensors.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../sockets-source/src"
-  "/usr/local/include"
+  "../sensor_driver/src"
   )
 
 # Targets to which this target links.

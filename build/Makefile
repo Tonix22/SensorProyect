@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named databaseSensorData
+
+# Build rule for target.
+databaseSensorData: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 databaseSensorData
+.PHONY : databaseSensorData
+
+# fast build rule for target.
+databaseSensorData/fast:
+	$(MAKE) -f DataBase/CMakeFiles/databaseSensorData.dir/build.make DataBase/CMakeFiles/databaseSensorData.dir/build
+.PHONY : databaseSensorData/fast
+
+#=============================================================================
+# Target rules for targets named sensor-driver
+
+# Build rule for target.
+sensor-driver: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor-driver
+.PHONY : sensor-driver
+
+# fast build rule for target.
+sensor-driver/fast:
+	$(MAKE) -f sensor_driver/CMakeFiles/sensor-driver.dir/build.make sensor_driver/CMakeFiles/sensor-driver.dir/build
+.PHONY : sensor-driver/fast
+
+#=============================================================================
 # Target rules for targets named sensor-comunication
 
 # Build rule for target.
@@ -144,6 +170,8 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... databaseSensorData"
+	@echo "... sensor-driver"
 	@echo "... sensor-comunication"
 	@echo "... sensor"
 .PHONY : help

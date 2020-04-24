@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/tonix/projects/helloworld/SensorProyect/SensorProyect/sockets-source/src/comunication.cpp" "/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/sockets-source/CMakeFiles/sensor-comunication.dir/src/comunication.cpp.o"
+  "/home/tonix/projects/helloworld/SensorProyect/SensorProyect/sockets-source/src/message_wrap.cpp" "/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/sockets-source/CMakeFiles/sensor-comunication.dir/src/message_wrap.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

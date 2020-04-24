@@ -152,6 +152,33 @@ src/comunication.cpp.s:
 	cd /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build && $(MAKE) -f sockets-source/CMakeFiles/sensor-comunication.dir/build.make sockets-source/CMakeFiles/sensor-comunication.dir/src/comunication.cpp.s
 .PHONY : src/comunication.cpp.s
 
+src/message_wrap.o: src/message_wrap.cpp.o
+
+.PHONY : src/message_wrap.o
+
+# target to build an object file
+src/message_wrap.cpp.o:
+	cd /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build && $(MAKE) -f sockets-source/CMakeFiles/sensor-comunication.dir/build.make sockets-source/CMakeFiles/sensor-comunication.dir/src/message_wrap.cpp.o
+.PHONY : src/message_wrap.cpp.o
+
+src/message_wrap.i: src/message_wrap.cpp.i
+
+.PHONY : src/message_wrap.i
+
+# target to preprocess a source file
+src/message_wrap.cpp.i:
+	cd /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build && $(MAKE) -f sockets-source/CMakeFiles/sensor-comunication.dir/build.make sockets-source/CMakeFiles/sensor-comunication.dir/src/message_wrap.cpp.i
+.PHONY : src/message_wrap.cpp.i
+
+src/message_wrap.s: src/message_wrap.cpp.s
+
+.PHONY : src/message_wrap.s
+
+# target to generate assembly for a file
+src/message_wrap.cpp.s:
+	cd /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build && $(MAKE) -f sockets-source/CMakeFiles/sensor-comunication.dir/build.make sockets-source/CMakeFiles/sensor-comunication.dir/src/message_wrap.cpp.s
+.PHONY : src/message_wrap.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -164,6 +191,9 @@ help:
 	@echo "... src/comunication.o"
 	@echo "... src/comunication.i"
 	@echo "... src/comunication.s"
+	@echo "... src/message_wrap.o"
+	@echo "... src/message_wrap.i"
+	@echo "... src/message_wrap.s"
 .PHONY : help
 
 
