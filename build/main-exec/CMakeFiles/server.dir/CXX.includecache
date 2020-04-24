@@ -10,10 +10,18 @@
 ctime
 -
 
-/home/tonix/projects/helloworld/SensorProyect/SensorProyect/DataBase/src/Database.cpp
-stdio.h
+../main-exec/server.hpp
+ctime
 -
-sqlite3.h
+
+../sensor_driver/src/sensors.hpp
+
+/home/tonix/projects/helloworld/SensorProyect/SensorProyect/main-exec/server.cpp
+unistd.h
+-
+sensors.hpp
+-
+server.hpp
 -
 Database.hpp
 -

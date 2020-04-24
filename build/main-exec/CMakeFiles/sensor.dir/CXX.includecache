@@ -7,6 +7,12 @@
 #IncludeRegexTransform: 
 
 ../DataBase/src/Database.hpp
+ctime
+-
+
+../main-exec/server.hpp
+ctime
+-
 
 ../sensor_driver/src/sensors.hpp
 
@@ -42,6 +48,10 @@ Database.hpp
 iomanip
 -
 stdio.h
+-
+thread
+-
+server.hpp
 -
 
 /usr/local/include/nanomsg/nn.h

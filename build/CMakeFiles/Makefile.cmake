@@ -59,4 +59,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "sensor_driver/CMakeFiles/sensor-driver.dir/DependInfo.cmake"
   "sockets-source/CMakeFiles/sensor-comunication.dir/DependInfo.cmake"
   "main-exec/CMakeFiles/sensor.dir/DependInfo.cmake"
+  "main-exec/CMakeFiles/server.dir/DependInfo.cmake"
   )

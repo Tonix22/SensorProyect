@@ -4,6 +4,8 @@
 #include <Database.hpp>
 #include <iomanip>
 #include <stdio.h>
+#include <thread> 
+#include <server.hpp>
 using namespace std;
 int main(int argc, char const *argv[])
 {
@@ -11,7 +13,11 @@ int main(int argc, char const *argv[])
     {
         init_data_base();
         init_commands();
-        return server (IPCSERVERCLIENT);
+        thread main_server (server_task);
+        thread socket_thread  (server_socket, IPCSERVERCLIENT);
+        main_server.join();
+        socket_thread.join();
+        //return server_socket (IPCSERVERCLIENT);
     }
     else if (strncmp (CLIENT, argv[1], strlen (CLIENT)) == 0  && argc > 2)
     {
@@ -22,7 +28,7 @@ int main(int argc, char const *argv[])
         //"Time <timestamp> <sensor type>" --> return sensor output in that time
         if( MakeInputString(argc,argv) )
         {
-            return client (IPCSERVERCLIENT);
+            return client_socket (IPCSERVERCLIENT);
         }
         else
         {

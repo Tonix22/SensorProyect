@@ -9,14 +9,7 @@
 #include <nanomsg/nn.h>
 #include <nanomsg/reqrep.h>
 
-typedef enum
-{
-    Temperature,
-    Humidity,
-    Both,
-}Sensor_t;
-
 #define IPCSERVERCLIENT "ipc:///tmp/reqrep.ipc"
-int server (const char *url);
-int client (const char *url);
+int server_socket (const char *url);
+int client_socket (const char *url);
 #endif

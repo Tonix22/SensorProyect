@@ -196,7 +196,7 @@ sockets-source/preinstall:
 # Target rules for target sockets-source/CMakeFiles/sensor-comunication.dir
 
 # All Build rule for target.
-sockets-source/CMakeFiles/sensor-comunication.dir/all:
+sockets-source/CMakeFiles/sensor-comunication.dir/all: main-exec/CMakeFiles/server.dir/all
 	$(MAKE) -f sockets-source/CMakeFiles/sensor-comunication.dir/build.make sockets-source/CMakeFiles/sensor-comunication.dir/depend
 	$(MAKE) -f sockets-source/CMakeFiles/sensor-comunication.dir/build.make sockets-source/CMakeFiles/sensor-comunication.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles --progress-num=5,6,7 "Built target sensor-comunication"
@@ -209,7 +209,7 @@ all: sockets-source/CMakeFiles/sensor-comunication.dir/all
 
 # Build rule for subdir invocation for target.
 sockets-source/CMakeFiles/sensor-comunication.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 sockets-source/CMakeFiles/sensor-comunication.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles 0
 .PHONY : sockets-source/CMakeFiles/sensor-comunication.dir/rule
@@ -234,11 +234,13 @@ clean: sockets-source/CMakeFiles/sensor-comunication.dir/clean
 
 # Convenience name for "all" pass in the directory.
 main-exec/all: main-exec/CMakeFiles/sensor.dir/all
+main-exec/all: main-exec/CMakeFiles/server.dir/all
 
 .PHONY : main-exec/all
 
 # Convenience name for "clean" pass in the directory.
 main-exec/clean: main-exec/CMakeFiles/sensor.dir/clean
+main-exec/clean: main-exec/CMakeFiles/server.dir/clean
 
 .PHONY : main-exec/clean
 
@@ -266,7 +268,7 @@ all: main-exec/CMakeFiles/sensor.dir/all
 
 # Build rule for subdir invocation for target.
 main-exec/CMakeFiles/sensor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 main-exec/CMakeFiles/sensor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles 0
 .PHONY : main-exec/CMakeFiles/sensor.dir/rule
@@ -283,6 +285,44 @@ main-exec/CMakeFiles/sensor.dir/clean:
 
 # clean rule for target.
 clean: main-exec/CMakeFiles/sensor.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target main-exec/CMakeFiles/server.dir
+
+# All Build rule for target.
+main-exec/CMakeFiles/server.dir/all: DataBase/CMakeFiles/databaseSensorData.dir/all
+main-exec/CMakeFiles/server.dir/all: sensor_driver/CMakeFiles/sensor-driver.dir/all
+	$(MAKE) -f main-exec/CMakeFiles/server.dir/build.make main-exec/CMakeFiles/server.dir/depend
+	$(MAKE) -f main-exec/CMakeFiles/server.dir/build.make main-exec/CMakeFiles/server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles --progress-num=10,11 "Built target server"
+.PHONY : main-exec/CMakeFiles/server.dir/all
+
+# Include target in all.
+all: main-exec/CMakeFiles/server.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+main-exec/CMakeFiles/server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 main-exec/CMakeFiles/server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/CMakeFiles 0
+.PHONY : main-exec/CMakeFiles/server.dir/rule
+
+# Convenience name for target.
+server: main-exec/CMakeFiles/server.dir/rule
+
+.PHONY : server
+
+# clean rule for target.
+main-exec/CMakeFiles/server.dir/clean:
+	$(MAKE) -f main-exec/CMakeFiles/server.dir/build.make main-exec/CMakeFiles/server.dir/clean
+.PHONY : main-exec/CMakeFiles/server.dir/clean
+
+# clean rule for target.
+clean: main-exec/CMakeFiles/server.dir/clean
 
 .PHONY : clean
 

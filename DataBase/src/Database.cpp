@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <sqlite3.h>
-
+#include <Database.hpp>
 static void init_temperature_table(void);
 static void init_moisture_table(void);
 
@@ -50,7 +50,7 @@ static void init_temperature_table(void)
     sqlite3* db = open_data_base();
     char *zErrMsg = 0;
     int rc;
-    const char *sql = "CREATE TABLE Sensor_temp (Time DATETIME, Value INT)";
+    const char *sql = "CREATE TABLE Sensor_temp (Time TIMESTAMP, Value FLOAT);";
     rc = sqlite3_exec(db, sql, callback, 0, &zErrMsg);
     close_data_base(rc,db,zErrMsg);
 }
@@ -60,28 +60,28 @@ static void init_moisture_table(void)
     sqlite3* db = open_data_base();
     char *zErrMsg = 0;
     int rc;
-    const char *sql = "CREATE TABLE Sensor_Humidity (Time DATETIME, Value INT)";
+    const char *sql = "CREATE TABLE Sensor_Humidity (Time TIMESTAMP, Value FLOAT);";
 
     rc = sqlite3_exec(db, sql, callback, 0, &zErrMsg);
     close_data_base(rc,db,zErrMsg);
 }
-void push_data_temp(float value) //TODO check how to import time as string?
+void push_data_temp(time_t time, float value) //TODO check how to import time as string?
 {
     sqlite3* db = open_data_base();
     int rc;
     char *zErrMsg = 0;
-    char sql[60]={0};
-    sprintf(sql,"INSERT INTO Sensor_temp VALUES(GETDATE(),%.2f)",value);
+    char sql[70]={0};
+    sprintf(sql,"INSERT INTO Sensor_temp VALUES(%ld,%.2f);",time,value);
     rc = sqlite3_exec(db, sql, callback, 0, &zErrMsg);
     close_data_base(rc,db,zErrMsg);
 }
-void push_data_hum(float value) //TODO check how to import time as string?
+void push_data_hum(time_t time, float value) //TODO check how to import time as string?
 {
     sqlite3* db = open_data_base();
     int rc;
     char *zErrMsg = 0;
-    char sql[60]={0};
-    sprintf(sql,"INSERT INTO Sensor_Humidity VALUES(GETDATE(),%.2f)",value);
+    char sql[70]={0};
+    sprintf(sql,"INSERT INTO Sensor_Humidity VALUES(%ld,%.2f);",time,value);
     rc = sqlite3_exec(db, sql, callback, 0, &zErrMsg);
     close_data_base(rc,db,zErrMsg);
 }

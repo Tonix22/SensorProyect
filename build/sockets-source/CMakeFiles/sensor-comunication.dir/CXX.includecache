@@ -6,33 +6,11 @@
 
 #IncludeRegexTransform: 
 
-../sockets-source/src/comunication.hpp
-iostream
--
-assert.h
--
-unistd.h
--
-string.h
--
-pthread.h
--
-stdio.h
--
-nanomsg/nn.h
--
-nanomsg/reqrep.h
+../main-exec/server.hpp
+ctime
 -
 
 ../sockets-source/src/message_wrap.hpp
-
-/home/tonix/projects/helloworld/SensorProyect/SensorProyect/sockets-source/src/comunication.cpp
-comunication.hpp
--
-message_wrap.hpp
--
-string
--
 
 /home/tonix/projects/helloworld/SensorProyect/SensorProyect/sockets-source/src/message_wrap.cpp
 message_wrap.hpp
@@ -41,24 +19,14 @@ iostream
 -
 unordered_set
 -
-stdio.h
--
 string
 -
 stdio.h
 -
 string.h
 -
-
-/usr/local/include/nanomsg/nn.h
-errno.h
+server.hpp
 -
-stddef.h
+vector
 -
-stdint.h
--
-
-/usr/local/include/nanomsg/reqrep.h
-nn.h
-/usr/local/include/nanomsg/nn.h
 

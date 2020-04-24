@@ -162,6 +162,19 @@ sensor/fast:
 	$(MAKE) -f main-exec/CMakeFiles/sensor.dir/build.make main-exec/CMakeFiles/sensor.dir/build
 .PHONY : sensor/fast
 
+#=============================================================================
+# Target rules for targets named server
+
+# Build rule for target.
+server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 server
+.PHONY : server
+
+# fast build rule for target.
+server/fast:
+	$(MAKE) -f main-exec/CMakeFiles/server.dir/build.make main-exec/CMakeFiles/server.dir/build
+.PHONY : server/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -174,6 +187,7 @@ help:
 	@echo "... sensor-driver"
 	@echo "... sensor-comunication"
 	@echo "... sensor"
+	@echo "... server"
 .PHONY : help
 
 

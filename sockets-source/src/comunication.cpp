@@ -7,7 +7,7 @@ using namespace std;
 
 extern string send_command;
 
-int server (const char *url)
+int server_socket (const char *url)
 {
     int sock = nn_socket (AF_SP, NN_REP);
     assert (sock >= 0);
@@ -26,10 +26,12 @@ int server (const char *url)
         assert (bytes >= 0);
         if (message_process(buf) == true)
         {
-            printf ("SERVER: RECEIVED DATE REQUEST\n");
-            char *d = get_time_stap();
+            const char *d = get_response();
+            printf("response %s\r\n",d);
+            //printf ("SERVER: RECEIVED DATE REQUEST\n");
+            //char *d = get_time_stap();
             int sz_d = strlen(d) + 1; // '\0' end of string
-            printf ("SERVER: SENDING DATE %s\n", d);
+            //printf ("SERVER: SENDING DATE %s\n", d);
             bytes = nn_send (sock, d, sz_d, 0);
             assert (bytes == sz_d);
         }
@@ -40,7 +42,7 @@ int server (const char *url)
   
 }
 
-int client (const char *url)
+int client_socket (const char *url)
 {
     char *buf = NULL;
     int bytes = -1;

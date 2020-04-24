@@ -12,3 +12,4 @@
 /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/main-exec/CMakeFiles/rebuild_cache.dir
 /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/main-exec/CMakeFiles/edit_cache.dir
 /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/main-exec/CMakeFiles/sensor.dir
+/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/main-exec/CMakeFiles/server.dir

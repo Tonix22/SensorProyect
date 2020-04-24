@@ -10,6 +10,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../main-exec"
   "../DataBase/src"
   "../sensor_driver/src"
   "../sockets-source/src"
@@ -18,6 +19,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/main-exec/CMakeFiles/server.dir/DependInfo.cmake"
   "/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/DataBase/CMakeFiles/databaseSensorData.dir/DependInfo.cmake"
   "/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/sensor_driver/CMakeFiles/sensor-driver.dir/DependInfo.cmake"
   "/home/tonix/projects/helloworld/SensorProyect/SensorProyect/build/sockets-source/CMakeFiles/sensor-comunication.dir/DependInfo.cmake"

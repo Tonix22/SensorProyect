@@ -125,6 +125,21 @@ sensor/fast:
 	cd /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build && $(MAKE) -f main-exec/CMakeFiles/sensor.dir/build.make main-exec/CMakeFiles/sensor.dir/build
 .PHONY : sensor/fast
 
+# Convenience name for target.
+main-exec/CMakeFiles/server.dir/rule:
+	cd /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build && $(MAKE) -f CMakeFiles/Makefile2 main-exec/CMakeFiles/server.dir/rule
+.PHONY : main-exec/CMakeFiles/server.dir/rule
+
+# Convenience name for target.
+server: main-exec/CMakeFiles/server.dir/rule
+
+.PHONY : server
+
+# fast build rule for target.
+server/fast:
+	cd /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build && $(MAKE) -f main-exec/CMakeFiles/server.dir/build.make main-exec/CMakeFiles/server.dir/build
+.PHONY : server/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -152,6 +167,33 @@ main.cpp.s:
 	cd /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build && $(MAKE) -f main-exec/CMakeFiles/sensor.dir/build.make main-exec/CMakeFiles/sensor.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+server.o: server.cpp.o
+
+.PHONY : server.o
+
+# target to build an object file
+server.cpp.o:
+	cd /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build && $(MAKE) -f main-exec/CMakeFiles/server.dir/build.make main-exec/CMakeFiles/server.dir/server.cpp.o
+.PHONY : server.cpp.o
+
+server.i: server.cpp.i
+
+.PHONY : server.i
+
+# target to preprocess a source file
+server.cpp.i:
+	cd /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build && $(MAKE) -f main-exec/CMakeFiles/server.dir/build.make main-exec/CMakeFiles/server.dir/server.cpp.i
+.PHONY : server.cpp.i
+
+server.s: server.cpp.s
+
+.PHONY : server.s
+
+# target to generate assembly for a file
+server.cpp.s:
+	cd /home/tonix/projects/helloworld/SensorProyect/SensorProyect/build && $(MAKE) -f main-exec/CMakeFiles/server.dir/build.make main-exec/CMakeFiles/server.dir/server.cpp.s
+.PHONY : server.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -161,9 +203,13 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... sensor"
+	@echo "... server"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... server.o"
+	@echo "... server.i"
+	@echo "... server.s"
 .PHONY : help
 
 

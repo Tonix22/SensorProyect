@@ -8,5 +8,6 @@ sockets-source/CMakeFiles/sensor-comunication.dir/src/comunication.cpp.o
  /usr/local/include/nanomsg/nn.h
  /usr/local/include/nanomsg/reqrep.h
 sockets-source/CMakeFiles/sensor-comunication.dir/src/message_wrap.cpp.o
+ ../main-exec/server.hpp
  ../sockets-source/src/message_wrap.hpp
  /home/tonix/projects/helloworld/SensorProyect/SensorProyect/sockets-source/src/message_wrap.cpp

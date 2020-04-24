@@ -3,6 +3,7 @@
 
 main-exec/CMakeFiles/sensor.dir/main.cpp.o
  ../DataBase/src/Database.hpp
+ ../main-exec/server.hpp
  ../sensor_driver/src/sensors.hpp
  ../sockets-source/src/comunication.hpp
  ../sockets-source/src/message_wrap.hpp

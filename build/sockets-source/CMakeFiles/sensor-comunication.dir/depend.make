@@ -7,6 +7,7 @@ sockets-source/CMakeFiles/sensor-comunication.dir/src/comunication.cpp.o: ../soc
 sockets-source/CMakeFiles/sensor-comunication.dir/src/comunication.cpp.o: /usr/local/include/nanomsg/nn.h
 sockets-source/CMakeFiles/sensor-comunication.dir/src/comunication.cpp.o: /usr/local/include/nanomsg/reqrep.h
 
+sockets-source/CMakeFiles/sensor-comunication.dir/src/message_wrap.cpp.o: ../main-exec/server.hpp
 sockets-source/CMakeFiles/sensor-comunication.dir/src/message_wrap.cpp.o: ../sockets-source/src/message_wrap.hpp
 sockets-source/CMakeFiles/sensor-comunication.dir/src/message_wrap.cpp.o: ../sockets-source/src/message_wrap.cpp
 

@@ -9,7 +9,14 @@
 #define BOTH          "Both"
 #define TIMEQUERY     "Time"
 
+typedef enum
+{
+    Temperature,
+    Humidity,
+    Both,
+}Sensor_t;
 char *get_time_stap ();
+const char * get_response();
 void init_commands();
 bool message_process(char* msg);
 bool MakeInputString(int argc, char const *argv[]);
